@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Asset;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -11,9 +12,14 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        $search = $request->input('search');
+
+        $asset = Asset::orderBy('created_at', 'desc')
+            ->where('name', 'like', '%' . $search . '%')
+            ->paginate(2);
+        return view('home', compact('asset'));
     }
 
     public function adminHome()
