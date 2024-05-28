@@ -8,7 +8,7 @@
 
             <h1 class="font-bold text-2xl ml-3">Asset List</h1>
 
-            <div data-search-form class="relative hidden md:inline-block w-1/5">
+            <div data-search-form class="relative w-56">
                 <div class="text-gray-500">
                     <svg data-search-icon class="absolute fill-current w-4" viewBox="0 0 512 512"
                         style="top: 0.7rem; left: 1rem;">
@@ -39,16 +39,16 @@
 
 
 
-        <div class="overflow-x-auto w-full max-w-7xl mx-auto mt-16">
+        <div class="overflow-x-auto w-full max-w-7xl mx-auto mt-16 border-2 rounded-lg">
             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                <thead class="text-sm text-gray-700 bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <thead class="text-sm text-gray-700 bg-blue-50 dark:bg-blue-700 dark:text-gray-400">
                     <tr>
-                        <th scope="col" class="py-3 text-center px-1">No</th>
+                        <th scope="col" class="py-3 text-center">No</th>
                         <th scope="col" class="py-3">Kode Barang</th>
                         <th scope="col" class="py-3">Nama Barang</th>
                         <th scope="col" class="py-3">Tipe barang</th>
                         <th scope="col" class="py-3">Lokasi</th>
-                        <th scope="col" class="py-3">Aksi</th>
+                        <th scope="col" class="py-3"></th>
                     </tr>
                 </thead>
                 <tbody>

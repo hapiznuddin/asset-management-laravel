@@ -3,22 +3,20 @@
 @section('title', 'Profile Settings')
 
 @section('contents')
+<div class="max-w-7xl mx-auto">
+    <h1 class="font-bold text-2xl text-center">Profil</h1>
     <hr />
-    <form method="POST" enctype="multipart/form-data" action="">
+        <div class="my-4">
+            <label class="label">
+                <span class="text-base label-text font-bold">Name</span>
+            </label>
+                <p>{{ auth()->user()->name }}</p>
+        </div>
         <div>
             <label class="label">
-                <span class="text-base label-text">Name</span>
+                <span class="text-base label-text font-bold">Email</span>
             </label>
-            <input name="name" type="text" value="{{ auth()->user()->name }}" class="w-full input input-bordered" />
+                <p>{{ auth()->user()->email }}</p>
         </div>
-        <div>
-            <label class="label">
-                <span class="text-base label-text">Email</span>
-            </label>
-            <input name="email" type="text" value="{{ auth()->user()->email }}" class="w-full input input-bordered" />
-        </div>
-        <div class="mt-6">
-            <button type="submit" class="btn btn-block">Save Profile</button>
-        </div>
-    </form>
+</div>
 @endsection

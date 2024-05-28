@@ -3,13 +3,14 @@
 @section('title', 'Create Product')
 
 @section('contents')
-    <h1 class="font-bold text-2xl ml-3">Add Product</h1>
+<div class="max-w-7xl mx-auto">
+    <h1 class="font-bold text-2xl text-center">Tambah Aset</h1>
     <hr />
-    <div class="border-b border-gray-900/10 pb-12">
-        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            <form action="{{ route('admin/assets/store') }}" method="POST" enctype="multipart/form-data">
+    <div class="border-b border-gray-900/10 w-full max-w-2xl mx-auto pb-12">
+        <div class="mt-10 w-full">
+            <form action="{{ route('admin/assets/store') }}" method="POST" enctype="multipart/form-data" class='w-full'>
                 @csrf
-                <div class="sm:col-span-4">
+                <div class="sm:col-span-4 w-full">
                     <label class="block text-sm font-medium leading-6 text-gray-900">Kode Barang</label>
                     <div class="mt-2">
                         <input type="text" name="code" id="title"
@@ -34,8 +35,8 @@
                 <div class="sm:col-span-4">
                     <label class="block text-sm font-medium leading-6 text-gray-900">Lokasi</label>
                     <div class="mt-2">
-                        <textarea name="location" placeholder="Descriptoin" rows="3"
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                        <input id="location" name="location" type="text"
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
                 </div>
                 <button type="submit"
@@ -43,4 +44,5 @@
             </form>
         </div>
     </div>
+</div>
 @endsection
