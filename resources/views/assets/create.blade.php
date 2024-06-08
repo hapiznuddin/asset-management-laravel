@@ -18,21 +18,39 @@
                     </div>
                 </div>
 
-                <div class="sm:col-span-4">
+                <div class="sm:col-span-4 mt-2">
                     <label class="block text-sm font-medium leading-6 text-gray-900">Nama Barang</label>
                     <div class="mt-2">
                         <input id="price" name="name" type="text"
                             class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
                 </div>
-                <div class="sm:col-span-4">
+                <div class="sm:col-span-4 mt-2">
                     <label class="block text-sm font-medium leading-6 text-gray-900">Tipe Barang</label>
                     <div class="mt-2">
-                        <input id="product_code" name="type" type="text"
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        {{-- <input id="product_code" name="type" type="text"
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"> --}}
+
+                        <select name="type" id="type" class="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            <option value="" hidden >Pilih tipe</option>
+                            <option value="meja">Meja</option>
+                            <option value="kursi">Kursi</option>
+                            <option value="perangkat komputer">Perangkat Komputer</option>
+                            <option value="lemari">Lemari</option>
+                            <option value="papan tulis">Papan Tulis</option>
+                            <option value="alat tulis kelas">Alat Tulis Kelas</option>
+                            <option value="jam">Jam</option>
+                            <option value="pendingin ruangan">Pendingin Ruangan</option>
+                            <option value="perangkat suara">Perangkat Suara</option>
+                            <option value="apar">APAR</option>
+                            <option value="perangkat praktikum lab">Perangkat Praktikum LAB</option>
+                            <option value="alat musik">Alat Musik</option>
+                            <option value="alat olahraga">Alat Olahraga</option>
+                            <option value="p3k">P3K</option>
+                        </select>
                     </div>
                 </div>
-                <div class="sm:col-span-4">
+                <div class="sm:col-span-4 mt-2">
                     <label class="block text-sm font-medium leading-6 text-gray-900">Lokasi</label>
                     <div class="mt-2">
                         <input id="location" name="location" type="text"
