@@ -60,7 +60,7 @@
                                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 required="">
                         </div>
-                        <div class="flex items-center justify-between">
+                        {{-- <div class="flex items-center justify-between">
                             <div class="flex items-start">
                                 <div class="flex items-center h-5">
                                     <input name="remember" id="remember" aria-describedby="remember" type="checkbox"
@@ -71,10 +71,10 @@
                                     <label for="remember" class="text-gray-500 dark:text-gray-300">Ingat saya</label>
                                 </div>
                             </div>
-                            {{-- <a href="#"
+                            <a href="#"
                                 class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot
-                                password?</a> --}}
-                        </div>
+                                password?</a>
+                        </div> --}}
                         <button type="submit"
                             class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Login</button>
                         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
