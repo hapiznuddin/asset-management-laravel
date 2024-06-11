@@ -10,19 +10,19 @@
         <div class="mt-10 w-full">
             <form action="{{ route('admin/assets/store') }}" method="POST" enctype="multipart/form-data" class='w-full'>
                 @csrf
-                <div class="sm:col-span-4 w-full">
+                {{-- <div class="sm:col-span-4 w-full">
                     <label class="block text-sm font-medium leading-6 text-gray-900">Kode Barang</label>
                     <div class="mt-2">
                         <input type="text" name="code" id="title"
                             class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
-                </div>
+                </div> --}}
 
                 <div class="sm:col-span-4 mt-2">
                     <label class="block text-sm font-medium leading-6 text-gray-900">Nama Barang</label>
                     <div class="mt-2">
-                        <input id="price" name="name" type="text"
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <input id="name" name="name" type="text"
+                            class="block w-full rounded-md border-0 px-3 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
                 </div>
                 <div class="sm:col-span-4 mt-2">
@@ -33,20 +33,20 @@
 
                         <select name="type" id="type" class="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                             <option value="" hidden >Pilih tipe</option>
-                            <option value="meja">Meja</option>
-                            <option value="kursi">Kursi</option>
-                            <option value="perangkat komputer">Perangkat Komputer</option>
-                            <option value="lemari">Lemari</option>
-                            <option value="papan tulis">Papan Tulis</option>
-                            <option value="alat tulis kelas">Alat Tulis Kelas</option>
-                            <option value="jam">Jam</option>
-                            <option value="pendingin ruangan">Pendingin Ruangan</option>
-                            <option value="perangkat suara">Perangkat Suara</option>
-                            <option value="apar">APAR</option>
-                            <option value="perangkat praktikum lab">Perangkat Praktikum LAB</option>
-                            <option value="alat musik">Alat Musik</option>
-                            <option value="alat olahraga">Alat Olahraga</option>
-                            <option value="p3k">P3K</option>
+                            <option value="Meja">Meja</option>
+                            <option value="Kursi">Kursi</option>
+                            <option value="Perangkat Komputer">Perangkat Komputer</option>
+                            <option value="Lemari">Lemari</option>
+                            <option value="Papan Tulis">Papan Tulis</option>
+                            <option value="Alat Tulis Kelas">Alat Tulis Kelas</option>
+                            <option value="Jam">Jam</option>
+                            <option value="Pendingin Ruangan">Pendingin Ruangan</option>
+                            <option value="Perangkat Suara">Perangkat Suara</option>
+                            <option value="APAR">APAR</option>
+                            <option value="Perangkat Praktikum Lab">Perangkat Praktikum LAB</option>
+                            <option value="Alat Musik">Alat Musik</option>
+                            <option value="Alat Olahraga">Alat Olahraga</option>
+                            <option value="P3K">P3K</option>
                         </select>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                     <label class="block text-sm font-medium leading-6 text-gray-900">Lokasi</label>
                     <div class="mt-2">
                         <input id="location" name="location" type="text"
-                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            class="block w-full rounded-md border-0 px-3 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
                 </div>
                 <button type="submit"
