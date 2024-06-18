@@ -29,8 +29,8 @@
             </form>
         </div>
         <div class="overflow-x-auto w-full max-w-7xl mx-auto border-2 rounded-lg">
-            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                <thead class="text-sm text-gray-700 bg-blue-50 dark:bg-gray-700 dark:text-gray-400">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+                <thead class="text-sm text-gray-700 bg-blue-50">
                     <tr>
                         <th scope="col" class="py-3 text-center px-1">No</th>
                         <th scope="col" class="py-3">Kode Barang</th>
@@ -44,9 +44,9 @@
                     @if ($asset->count() > 0)
                         @foreach ($asset as $i => $rs)
                             <tr
-                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 font-medium">
+                                class="bg-white border-b hover:bg-gray-50 font-medium">
                                 <th scope="row"
-                                    class="font-medium text-gray-900 whitespace-nowrap dark:text-white text-center">
+                                    class="font-medium text-gray-900 whitespace-nowrap text-center">
                                     {{ $asset->firstItem() + $i }}
                                 </th>
                                 <td>
@@ -65,7 +65,7 @@
                                     <div class="flex items-center gap-2">
                                         <button
                                             class="text-blue-800 hover:bg-blue-200 hover:text-blue-800 px-3 py-2 rounded-lg active:scale-90 font-medium transition-all"
-                                            onclick="location.href='{{ route('admin/assets/detail', $rs->id) }}'">
+                                            onclick="location.href='{{ route('home/asset', $rs->id) }}'">
                                             Detail
                                             {{-- <a href="{{ route('admin/assets/detail', $rs->id) }}" class="text-blue-800">Detail</a>  --}}
                                         </button> 

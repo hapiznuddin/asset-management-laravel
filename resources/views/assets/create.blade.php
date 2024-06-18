@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Create Product')
+@section('title', 'Tambah Asset')
 
 @section('contents')
 <div class="max-w-7xl mx-auto">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Asset;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -18,12 +19,22 @@ class HomeController extends Controller
 
         $asset = Asset::orderBy('created_at', 'desc')
             ->where('name', 'like', '%' . $search . '%')
-            ->paginate(2);
+            ->paginate(15);
         return view('home', compact('asset'));
+    }
+
+    public function homeAssetDetail(string $id)
+    {
+        $asset = Asset::findOrFail($id);
+
+        return view('homeAssetDetail', compact('asset'));
     }
 
     public function adminHome()
     {
-        return view('dashboard');
+        $assets = Asset::select('type', DB::raw('count(*) as total'))
+                    ->groupBy('type')
+                    ->get();
+        return view('dashboard', compact('assets'));
     }
 }

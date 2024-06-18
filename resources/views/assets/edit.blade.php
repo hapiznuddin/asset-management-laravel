@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Edit Product')
+@section('title', 'Edit Asset')
 
 @section('contents')
     <h1 class="mb-0">Edit Product</h1>

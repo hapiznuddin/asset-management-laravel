@@ -36,6 +36,7 @@ Route::controller(AuthController::class)->group(function () {
 //* Normal User Routes List
 Route::middleware(['auth', 'user-access:user'])->group(function () {    
     Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/home/asset/{id}', [HomeController::class, 'homeAssetDetail'])->name('home/asset');
 });
 
 //* Admin Routes List
